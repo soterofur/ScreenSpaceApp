@@ -27,7 +27,7 @@ export const dateIsMoreThanSevenDaysAheadOfCurrentTime = date => {
 
 
 export function locationMaps(address) {
-  const apiKey = 'AIzaSyCorovpkIvmO07hc721CLoar-WWyApLJ0w'; // Reemplaza esto con tu API Key de Google Maps
+  const apiKey = 'API KEY GOOGLE MAPS';
   const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${apiKey}`;
   return new Promise((resolve, reject) => {
     axios.get(geocodeUrl)
